@@ -1,0 +1,74 @@
+body {
+    background: linear-gradient(120deg, #232526 0%, #414345 100%);
+    color: #fff;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 500px;
+    margin: 60px auto;
+    padding: 30px;
+    background: rgba(40,40,50,0.95);
+    border-radius: 18px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+h1 {
+    font-size: 2.2em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.eboy {
+    color: #ff61a6;
+    font-style: italic;
+}
+label {
+    font-size: 1.1em;
+}
+textarea {
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    padding: 12px;
+    margin: 10px 0 20px 0;
+    font-size: 1em;
+    background: #2e2e38;
+    color: #fff;
+    resize: vertical;
+}
+button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 12px;
+    border: none;
+    background: #ff61a6;
+    color: #fff;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+button:hover {
+    background: #ff85b3;
+}
+.result {
+    margin-top: 22px;
+    padding: 12px;
+    background: #32323d;
+    border-radius: 10px;
+    font-size: 1.08em;
+    white-space: pre-wrap;
+}
+#downloadLink {
+    margin-top: 18px;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    background: #ff61a6;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+#downloadLink:hover {
+    background: #ff85b3;
+}
