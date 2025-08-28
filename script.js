@@ -6,24 +6,12 @@ document.getElementById('scriptForm').addEventListener('submit', function(event)
     resultDiv.textContent = "uh, o-okay... hehe... pensando no script pra você...";
     downloadLink.style.display = "none";
 
-    fetch('/generate', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ prompt })
-    })
-    .then(response => response.json())
-    .then(data => {
-        if (data.download_url) {
-            resultDiv.textContent = data.message;
-            downloadLink.href = data.download_url;
-            downloadLink.style.display = "block";
-        } else {
-            resultDiv.textContent = data.result;
-            downloadLink.style.display = "none";
-        }
-    })
-    .catch(error => {
-        resultDiv.textContent = "uh, houve um errinho... tenta de novo, okay? 😳";
+    if (prompt.toLowerCase().includes("blox fruits")) {
+        resultDiv.textContent = "uh, o-okay... hehe... script de Blox Fruits é especial, baixe aqui:";
+        downloadLink.href = "bloxfruits.txt";
+        downloadLink.style.display = "block";
+    } else {
+        resultDiv.textContent = "uh, o-okay... hehe... só consigo baixar script de Blox Fruits aqui no site estático!";
         downloadLink.style.display = "none";
-    });
+    }
 });
